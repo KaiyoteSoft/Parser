@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+<title>Page Title</title>
+	<!-- Cdn for bootstrap -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   <!-- Cdn for jquery and loads the other javascript files -->
+   <script type="text/javascript" src="parser.js"></script>
+   <script type="text/javascript" src="jsondata.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <FORM NAME="myform">
+      <INPUT TYPE="text" NAME="ipType" placeholder="Search by ip address"> 
+      <!-- <INPUT TYPE="button" NAME="button" Value="Search" onClick="inputIp()"> -->
+      <button type="button" class="btn btn-danger" onClick="inputIp()">Search</button>
+    </FORM>
+    <form name="hwForm">
+      <input type="text" name="hwType" placeholder="Search by hardware">
+      <button type="button" class="btn btn-primary" onClick="inputHardware()">Search</button>
+    </form>
+
+<!-- Test for appending lists -->
+    <form name="listForm">
+      <input type="text" name="listType" placeholder="ListTest">
+      <button type="button" class="btn btn-success" onClick="inputList();">Test</button>
+    </form>
+
+<!--   <input id="input" type="text" placeholder="Input Ip or Hardware Address"></input>
+  <button id="enter">Enter</button> -->
+  <div id="listData"></div>
+  <p id="compData1"></p>
+  <div id="compData2"></div>
+</div>
+</body>
+</html>
