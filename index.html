@@ -10,14 +10,15 @@
    <script type="text/javascript" src="parser.js"></script>
    <script type="text/javascript" src="jsondata.js"></script>
 
+
 </head>
 <body>
 <div class="container">
-    <FORM NAME="myform">
+<!--     <FORM NAME="myform">
       <INPUT TYPE="text" NAME="ipType" placeholder="Search by ip address"> 
-      <!-- <INPUT TYPE="button" NAME="button" Value="Search" onClick="inputIp()"> -->
+      <INPUT TYPE="button" NAME="button" Value="Search" onClick="inputIp()">
       <button type="button" class="btn btn-danger" onClick="inputIp()">Search</button>
-    </FORM>
+    </FORM> -->
     <form name="hwForm">
       <input type="text" name="hwType" placeholder="Search by hardware">
       <button type="button" class="btn btn-primary" onClick="inputHardware()">Search</button>
@@ -25,15 +26,17 @@
 
 <!-- Test for appending lists -->
     <form name="listForm">
-      <input type="text" name="listType" placeholder="ListTest">
-      <button type="button" class="btn btn-success" onClick="inputList();">Test</button>
+      <input type="text" name="listType" placeholder="Search by Ip address">
+      <button type="button" class="btn btn-success" onClick="inputList();">Search</button>
     </form>
 
 <!--   <input id="input" type="text" placeholder="Input Ip or Hardware Address"></input>
   <button id="enter">Enter</button> -->
   <div id="listData"></div>
+  <div id="test"></div>
   <p id="compData1"></p>
   <div id="compData2"></div>
+
 </div>
 </body>
 </html>
