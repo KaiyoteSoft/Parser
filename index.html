@@ -3,6 +3,7 @@
 <title>Page Title</title>
 	<!-- Cdn for bootstrap -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
    <link rel="stylesheet" href="style.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -14,18 +15,19 @@
 </head>
 <body>
 <div class="container">
-<!--     <FORM NAME="myform">
-      <INPUT TYPE="text" NAME="ipType" placeholder="Search by ip address"> 
-      <INPUT TYPE="button" NAME="button" Value="Search" onClick="inputIp()">
-      <button type="button" class="btn btn-danger" onClick="inputIp()">Search</button>
-    </FORM> -->
-    <form name="hwForm">
+    <h1 id="header">Stanford Server Search Catalog</h1>
+    <FORM NAME="nameForm">
+      <INPUT TYPE="text" NAME="nameType" placeholder="Search by machine"> 
+<!--       <INPUT TYPE="button" NAME="button" Value="Search" onClick="inputIp()"> -->
+      <button type="button" class="btn btn-danger" onClick="inputName()">Search</button>
+    </FORM>
+    <form name="hwForm" id="hardware">
       <input type="text" name="hwType" placeholder="Search by hardware">
       <button type="button" class="btn btn-primary" onClick="inputHardware()">Search</button>
     </form>
 
 <!-- Test for appending lists -->
-    <form name="listForm">
+    <form name="listForm" id="ip">
       <input type="text" name="listType" placeholder="Search by Ip address">
       <button type="button" class="btn btn-success" onClick="inputList();">Search</button>
     </form>
@@ -36,6 +38,12 @@
   <div id="test"></div>
   <p id="compData1"></p>
   <div id="compData2"></div>
+
+<footer>
+  <p id="footerTop">Developed by Kai Oda</p>
+  <p>Property of Stanford University, all rights reserved</p>
+  <p>Stanford 2015&copy</p>
+</footer>
 
 </div>
 </body>
