@@ -11,16 +11,24 @@
    <script type="text/javascript" src="parser.js"></script>
    <script type="text/javascript" src="jsondata.js"></script>
 
+   <script>
+      window.addEventListener("load", function() {
+        var load_screen = document.getElementById("load_screen");
+      document.body.removeChild(load_screen);
+      });
+   </script>
 
 </head>
 <body>
+  <div id="load_screen"><div id="loading">Loading document
+    </div></div>
 <div class="container">
-    <h1 id="header">Stanford Server Search Catalog</h1>
+    <h1 id="header">Stanford IPM Search</h1>
     <FORM NAME="nameForm">
       <INPUT TYPE="text" NAME="nameType" placeholder="Search by machine"> 
-<!--       <INPUT TYPE="button" NAME="button" Value="Search" onClick="inputIp()"> -->
       <button type="button" class="btn btn-danger" onClick="inputName()">Search</button>
     </FORM>
+
     <form name="hwForm" id="hardware">
       <input type="text" name="hwType" placeholder="Search by hardware">
       <button type="button" class="btn btn-primary" onClick="inputHardware()">Search</button>
@@ -32,12 +40,10 @@
       <button type="button" class="btn btn-success" onClick="inputList();">Search</button>
     </form>
 
-<!--   <input id="input" type="text" placeholder="Input Ip or Hardware Address"></input>
-  <button id="enter">Enter</button> -->
+
   <div id="listData"></div>
   <div id="test"></div>
-  <p id="compData1"></p>
-  <div id="compData2"></div>
+
 
 <footer>
   <p id="footerTop">Developed by Kai Oda</p>
