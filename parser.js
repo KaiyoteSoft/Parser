@@ -1,13 +1,30 @@
-// requiredlengthIp = 11;
 requiredlengthHw = 11;
 $(document).ready(function() {
-  //$('#data').displayalldatapoints(ip);
   $('body').keydown(function(e) {
     if (e.keyCode == 13) {
       alert("Must click the search button... sorry");
     }
   })
+  $('button').click(function(){
+      var text = "text";
+      $('#load').remove();
+      $('#wrapper').append('<span id="load">LOADING...</span>');
+      $('#load').fadeIn('normal');
+      loadContent();
+      function loadContent() {
+        $('#listData').load(text, '', showNewContent())
+      }
+      function showNewContent() {
+        $('#listData').show('normal', hideLoader());
+      }
+      function hideLoader() {
+        $('#load').fadeOut('normal');
+        // $('#wrapper').hide('fast');
+      }
+      return false;
+  });
 });
+
 
 function errorMessage(error) {
   if (error=="error") {
@@ -24,6 +41,9 @@ function errorMessage(error) {
 // Takes the name inputed from the from and searches the json data
 function inputName() {
   var nameAddress =document.nameForm.nameType.value;
+  // var url = "/ipm/ipm/search?name=" + nameAddress;
+
+  // $.getJSON( url, function ( jsondata ) {
   listContainer = [];
   var count = 0
   var i = 0;
@@ -55,11 +75,16 @@ function inputName() {
 
   $('#listData').html(listTable);
   document.nameForm.nameType.value = ('');
+
+  // });
 }
 
 // Looking for all the Addresses and storing in a list
 function inputList() {
   var listAddress = document.listForm.listType.value;
+  // var url = "/ipm/ipm/search?ip=" + listAddress;
+
+  // $.getJSON( url, function ( jsondata ) {
   listContainer = []
   var i = 0;
   var count = 0;
@@ -102,11 +127,16 @@ function inputList() {
 
   $('#listData').html(listTable);
   document.listForm.listType.value = ('');
+
+  // });
 }
 
 // Takes the string inputed from the hardware from and searches for it in the json data
 function inputHardware() {
   var hwAddress = document.hwForm.hwType.value;
+  // var url = "/ipm/ipm/search?hw=" + hwAddress;
+
+  // $.getJSON( url, function ( jsondata ) {
 
   listContainer = []
   var i = 0;
@@ -145,11 +175,16 @@ function inputHardware() {
 
   $('#listData').html(listTable);
   document.hwForm.hwType.value = ('');
+
+  // });
 }
 
 // Allows search by hardware within the table
 function searchHardware(hw) {
   var hardware = hw;
+  // var url = "/ipm/ipm/search?hw=" + hardware;
+
+  // $.getJSON( url, function ( jsondata ) {
   listContainer = [];
     var i = 0;
     for (i; i < jsondata.length; i++) {
@@ -170,11 +205,17 @@ function searchHardware(hw) {
   "<th>Ip Address</th> <th>Count</th>" + 
   "</tr>" + listContainer + "</table>"
   $('#listData').html(listTable);
+
+
+  // });
 }
 
 // Allows search by ip address within the table
 function searchIp(Ip) {
   var IpAddress = Ip;
+  // var url = "/ipm/ipm/search?ip=" + IpAddress;
+
+  // $.getJSON( url, function ( jsondata ) {
   listContainer = [];
     var i = 0;
     for (i; i < jsondata.length; i++) {
@@ -195,6 +236,8 @@ function searchIp(Ip) {
   "<th>Ip Address</th> <th>Hardware</th> <th>Count</th>" + 
   "</tr>" + listContainer + "</table>"
   $('#listData').html(listTable);
+
+  // });
 }
 
 

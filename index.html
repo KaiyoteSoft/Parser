@@ -9,19 +9,11 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
    <!-- Cdn for jquery and loads the other javascript files -->
    <script type="text/javascript" src="parser.js"></script>
-   <script type="text/javascript" src="jsondata.js"></script>
+   <script type="text/javascript" src="jsondataSensitive.js"></script>
 
-   <script>
-      window.addEventListener("load", function() {
-        var load_screen = document.getElementById("load_screen");
-      document.body.removeChild(load_screen);
-      });
-   </script>
 
 </head>
 <body>
-  <div id="load_screen"><div id="loading">Loading document
-    </div></div>
 <div class="container">
     <h1 id="header">Stanford IPM Search</h1>
     <FORM NAME="nameForm">
@@ -31,19 +23,19 @@
 
     <form name="hwForm" id="hardware">
       <input type="text" name="hwType" placeholder="Search by hardware">
-      <button type="button" class="btn btn-primary" onClick="inputHardware()">Search</button>
+      <button type="button" class="btn btn-primary" id="hwButton" onClick="inputHardware()">Search</button>
     </form>
 
 <!-- Test for appending lists -->
     <form name="listForm" id="ip">
       <input type="text" name="listType" placeholder="Search by Ip address">
-      <button type="button" class="btn btn-success" onClick="inputList();">Search</button>
+      <button type="button" class="btn btn-success" onClick="inputList();" id="ipButton">Search</button>
     </form>
 
 
+  <div id="wrapper"></div>
   <div id="listData"></div>
   <div id="test"></div>
-
 
 <footer>
   <p id="footerTop">Developed by Kai Oda</p>
