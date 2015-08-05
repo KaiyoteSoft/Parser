@@ -5,24 +5,24 @@ $(document).ready(function() {
       alert("Must click the search button... sorry");
     }
   })
-  $('button').click(function(){
-      var text = "text";
-      $('#load').remove();
-      $('#wrapper').append('<span id="load">LOADING...</span>');
-      $('#load').fadeIn('normal');
-      hideLoader();
-      function loadContent() {
-        $('#listData').load(text, '', showNewContent())
-      }
-      function showNewContent() {
-        $('#listData').show('normal', hideLoader());
-      }
-      function hideLoader() {
-        $('#load').fadeOut('normal');
-        // $('#wrapper').hide('fast');
-      }
-      return false;
-  });
+  // $('button').click(function(){
+  //     var text = "text";
+  //     $('#load').remove();
+  //     $('#wrapper').append('<span id="load">LOADING...</span>');
+  //     $('#load').fadeIn('normal');
+  //     hideLoader();
+  //     function loadContent() {
+  //       $('#listData').load(text, '', showNewContent())
+  //     }
+  //     function showNewContent() {
+  //       $('#listData').show('normal', hideLoader());
+  //     }
+  //     function hideLoader() {
+  //       $('#load').fadeOut('normal');
+  //       // $('#wrapper').hide('fast');
+  //     }
+  //     return false;
+  // });
 });
 
 
@@ -40,7 +40,7 @@ function errorMessage(error) {
 
 // Takes the name inputed from the from and searches the json data
 function inputName() {
-  $('#listData').html(""); //get this 
+  $('#listData').html(" "); //get this 
   $('#listData').html("Loading"); // and this
   var nameAddress =document.nameForm.nameType.value;
   // var url = "/ipm/ipm/search?name=" + nameAddress;
@@ -93,7 +93,7 @@ function inputName() {
 
 // Looking for all the Addresses and storing in a list
 function inputList() {
-  $('#listData').html(""); //get this 
+  $('#listData').html(" "); //get this 
   $('#listData').html("Loading"); // and this
   var listAddress = document.listForm.listType.value;
   // var url = "/ipm/ipm/search?ip=" + listAddress;
@@ -159,7 +159,7 @@ function inputList() {
 
 // Takes the string inputed from the hardware from and searches for it in the json data
 function inputHardware() {
-  $('#listData').html(""); //get this and
+  $('#listData').html(" "); //get this and
   $('#listData').html("Loading"); //this
   var hwAddress = document.hwForm.hwType.value;
   // var url = "/ipm/ipm/search?hw=" + hwAddress;
