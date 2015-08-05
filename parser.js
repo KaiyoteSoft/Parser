@@ -5,24 +5,6 @@ $(document).ready(function() {
       alert("Must click the search button... sorry");
     }
   })
-  // $('button').click(function(){
-  //     var text = "text";
-  //     $('#load').remove();
-  //     $('#wrapper').append('<span id="load">LOADING...</span>');
-  //     $('#load').fadeIn('normal');
-  //     hideLoader();
-  //     function loadContent() {
-  //       $('#listData').load(text, '', showNewContent())
-  //     }
-  //     function showNewContent() {
-  //       $('#listData').show('normal', hideLoader());
-  //     }
-  //     function hideLoader() {
-  //       $('#load').fadeOut('normal');
-  //       // $('#wrapper').hide('fast');
-  //     }
-  //     return false;
-  // });
 });
 
 
@@ -40,8 +22,8 @@ function errorMessage(error) {
 
 // Takes the name inputed from the from and searches the json data
 function inputName() {
-  $('#listData').html(" "); //get this 
-  $('#listData').html("Loading"); // and this
+  $('#listData').html(" ");  
+  $('#listData').html("Loading..."); 
   var nameAddress =document.nameForm.nameType.value;
   // var url = "/ipm/ipm/search?name=" + nameAddress;
 
@@ -85,7 +67,7 @@ function inputName() {
   "<th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
   "</tr>" + listContainer + "</table>"
 
-  $('#listData').html(" "); // This is new 
+  $('#listData').html(" ");  
   $('#listData').html(listTable);
   document.nameForm.nameType.value = ('');
   // });
@@ -93,8 +75,8 @@ function inputName() {
 
 // Looking for all the Addresses and storing in a list
 function inputList() {
-  $('#listData').html(" "); //get this 
-  $('#listData').html("Loading"); // and this
+  $('#listData').html(" "); 
+  $('#listData').html("Loading..."); 
   var listAddress = document.listForm.listType.value;
   // var url = "/ipm/ipm/search?ip=" + listAddress;
 
@@ -130,7 +112,7 @@ function inputList() {
         "<a onclick=\"searchHardware('" + hardware + "');\">" 
         + hardware + "</a>" + "</td>" +
         "<td>" + count + "</td> <td>" + stringFirst + "</td>" + 
-        "<td>" + stringLast + "</td></tr>"); // this is new
+        "<td>" + stringLast + "</td></tr>"); 
         }
       }
     }
@@ -150,7 +132,7 @@ function inputList() {
   "<th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
   "</tr>" + listContainer + "</table>"
 
-  $('#listData').html(" "); //this is also new
+  $('#listData').html(" "); 
   $('#listData').html(listTable);
   document.listForm.listType.value = ('');
 
@@ -160,7 +142,7 @@ function inputList() {
 // Takes the string inputed from the hardware from and searches for it in the json data
 function inputHardware() {
   $('#listData').html(" "); //get this and
-  $('#listData').html("Loading"); //this
+  $('#listData').html("Loading..."); //this
   var hwAddress = document.hwForm.hwType.value;
   // var url = "/ipm/ipm/search?hw=" + hwAddress;
 
@@ -192,7 +174,7 @@ function inputHardware() {
         "<a onclick=\"searchIp('" + ipAddress + "');\">" 
         + ipAddress + "</a>" + "</td>" +
         "<td>" + count + "</td> <td>" + stringFirst + "</td>" + 
-        "<td>" + stringLast + "</td> </tr>"); //this is needed
+        "<td>" + stringLast + "</td> </tr>"); 
         }
       }
     }
@@ -221,8 +203,8 @@ function inputHardware() {
 
 // Allows search by hardware within the table
 function searchHardware(hw) {
-  $('#listData').html(" "); //this is needed 
-  $('#listData').html("Loading"); // as well as this
+  $('#listData').html(" ");  
+  $('#listData').html("Loading..."); 
   var hardware = hw;
   // var url = "/ipm/ipm/search?hw=" + hardware;
 
@@ -250,15 +232,15 @@ function searchHardware(hw) {
           "<a onclick=\"searchIp('" + ipAddress + "');\">"
           + ipAddress + "</td>" +
           "<td>" + count + "</td> <td>" + stringFirst + "</td>" +
-          "<td>" + stringLast + "</td> </tr>"); //You are going to need this
+          "<td>" + stringLast + "</td> </tr>"); 
         }
       }
     }
   listTable = "<table> <tr> <th>Machine Name</th> <th>Hardware</th>" +
   "<th>Ip Address</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
-  "</tr>" + listContainer + "</table>" //this is new
+  "</tr>" + listContainer + "</table>" 
   
-  $('#listData').html(" "); //and this
+  $('#listData').html(" "); 
   $('#listData').html(listTable);
 
 
@@ -267,8 +249,8 @@ function searchHardware(hw) {
 
 // Allows search by ip address within the table
 function searchIp(Ip) {
-  $('#listData').html(" "); //this is needed
-  $('#listData').html("Loading"); // this is needed as well
+  $('#listData').html(" "); 
+  $('#listData').html("Loading..."); 
   var IpAddress = Ip;
   // var url = "/ipm/ipm/search?ip=" + IpAddress;
 
@@ -302,9 +284,9 @@ function searchIp(Ip) {
       }
   listTable = "<table> <tr> <th>Machine Name</th>" +
   "<th>Ip Address</th> <th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
-  "</tr>" + listContainer + "</table>" //this is needed as well
+  "</tr>" + listContainer + "</table>" 
   
-  $('#listData').html(" "); //this is new
+  $('#listData').html(" "); 
   $('#listData').html(listTable);
 
   // });
