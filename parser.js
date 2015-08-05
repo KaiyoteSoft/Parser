@@ -10,7 +10,7 @@ $(document).ready(function() {
       $('#load').remove();
       $('#wrapper').append('<span id="load">LOADING...</span>');
       $('#load').fadeIn('normal');
-      loadContent();
+      hideLoader();
       function loadContent() {
         $('#listData').load(text, '', showNewContent())
       }
@@ -54,12 +54,22 @@ function inputName() {
       var count = jsondata[i].refcnt;
       var hardware = jsondata[i].hw;
       var name = jsondata[i].fqname;
+// This part of the code translates and edits the times seen
+      var first = jsondata[i].firstseen;
+      var last = jsondata[i].lastseen;
+        var firstSeen = new Date(first);
+        var lastSeen = new Date(last);
+        var stringFirst = firstSeen.toString();
+        var stringLast = lastSeen.toString();
+        if(stringFirst.length > 15) stringFirst = stringFirst.substring(0,15);
+        if(stringLast.length > 15) stringLast = stringLast.substring(0,15);
+// And this is where it ends --> Copy the code in between these comments
       count = count + 1;
       listContainer.push("<tr> <td>" + name + "</td> <td>" + "<a onclick=\"searchIp('" +
       ipAddress + "');\">" + ipAddress + "</a> </td>" + "<td>" +
       "<a onclick=\"searchHardware('" + hardware + "');\">" 
       + hardware + "</a>" + "</td>" +
-      "<td>" + count + "</td>" + "</tr>");
+      "<td>" + count + "</td> <td>" + stringFirst + "</td> <td>" + stringLast + "</td> </tr>");
     }
     
   } 
@@ -70,7 +80,7 @@ function inputName() {
     }
 
   listTable = "<table> <tr> <th>Machine Name</th> <th>Ip Address</th>" + 
-  "<th>Hardware</th> <th>Count</th>" + 
+  "<th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
   "</tr>" + listContainer + "</table>"
 
   $('#listData').html(listTable);
@@ -100,12 +110,23 @@ function inputList() {
         var count = jsondata[i].refcnt;
         var hardware = jsondata[i].hw;
         var name = jsondata[i].fqname;
+// This part of the code translates and edits the times seen
+        var first = jsondata[i].firstseen;
+        var last = jsondata[i].lastseen;
+          var firstSeen = new Date(first);
+          var lastSeen = new Date(last);
+          var stringFirst = firstSeen.toString();
+          var stringLast = lastSeen.toString();
+          if(stringFirst.length > 15) stringFirst = stringFirst.substring(0,15);
+          if(stringLast.length > 15) stringLast = stringLast.substring(0,15);
+// And this is where it ends --> Copy the code in between these comments
         count = count + 1;
         listContainer.push("<tr> <td>" + name + "</td> <td>" + "<a onclick=\"searchIp('" +
         ipAddress + "');\">" + ipAddress + "</a> </td>" + "<td>" +
         "<a onclick=\"searchHardware('" + hardware + "');\">" 
         + hardware + "</a>" + "</td>" +
-        "<td>" + count + "</td>" + "</tr>");
+        "<td>" + count + "</td> <td>" + stringFirst + "</td>" + 
+        "<td>" + stringLast + "</td></tr>");
         }
       }
     }
@@ -122,7 +143,7 @@ function inputList() {
     } 
 
   listTable = "<table> <tr> <th>Machine Name</th> <th>Ip Address</th>" + 
-  "<th>Hardware</th> <th>Count</th>" + 
+  "<th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
   "</tr>" + listContainer + "</table>"
 
   $('#listData').html(listTable);
@@ -149,11 +170,22 @@ function inputHardware() {
         var count = jsondata[i].refcnt;
         var hardware = jsondata[i].hw;
         var name = jsondata[i].fqname;
+// This part of the code translates and edits the times seen
+        var first = jsondata[i].firstseen;
+        var last = jsondata[i].lastseen;
+          var firstSeen = new Date(first);
+          var lastSeen = new Date(last);
+          var stringFirst = firstSeen.toString();
+          var stringLast = lastSeen.toString();
+          if(stringFirst.length > 15) stringFirst = stringFirst.substring(0,15);
+          if(stringLast.length > 15) stringLast = stringLast.substring(0,15);
+// And this is where it ends --> Copy the code in between these comments
         count = count + 1;
         listContainer.push("<tr> <td>" + name + "</td> <td>" + hardware + "</td>" + "<td>" +
         "<a onclick=\"searchIp('" + ipAddress + "');\">" 
         + ipAddress + "</a>" + "</td>" +
-        "<td>" + count + "</td>" + "</tr>");
+        "<td>" + count + "</td> <td>" + stringFirst + "</td>" + 
+        "<td>" + stringLast + "</td> </tr>");
         }
       }
     }
@@ -170,7 +202,7 @@ function inputHardware() {
   }
 
   listTable = "<table> <tr> <th>Machine Name</th> <th>Hardware</th>" + 
-  "<th>Ip Address</th> <th>Count</th>" + 
+  "<th>Ip Address</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
   "</tr>" + listContainer + "</table>"
 
   $('#listData').html(listTable);
@@ -194,15 +226,26 @@ function searchHardware(hw) {
           var ipAddress = jsondata[i].ipstr;
           var name = jsondata[i].fqname;
           var count = jsondata[i].refcnt;
+// This part of the code translates and edits the times seen
+        var first = jsondata[i].firstseen;
+        var last = jsondata[i].lastseen;
+          var firstSeen = new Date(first);
+          var lastSeen = new Date(last);
+          var stringFirst = firstSeen.toString();
+          var stringLast = lastSeen.toString();
+          if(stringFirst.length > 15) stringFirst = stringFirst.substring(0,15);
+          if(stringLast.length > 15) stringLast = stringLast.substring(0,15);
+// And this is where it ends --> Copy the code in between these comments
           listContainer.push("<tr> <td>" + name + "</td> <td>" + hardware + "</td>" + "<td>" + 
           "<a onclick=\"searchIp('" + ipAddress + "');\">"
           + ipAddress + "</td>" +
-          "<td>" + count + "</td>" + "</tr>");
+          "<td>" + count + "</td> <td>" + stringFirst + "</td>" +
+          "<td>" + stringLast + "</td> </tr>");
         }
       }
     }
   listTable = "<table> <tr> <th>Machine Name</th> <th>Hardware</th>" +
-  "<th>Ip Address</th> <th>Count</th>" + 
+  "<th>Ip Address</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
   "</tr>" + listContainer + "</table>"
   $('#listData').html(listTable);
 
@@ -225,15 +268,26 @@ function searchIp(Ip) {
           var hardware = jsondata[i].hw;
           var name = jsondata[i].fqname;
           var count = jsondata[i].refcnt;
+// This part of the code translates and edits the times seen
+        var first = jsondata[i].firstseen;
+        var last = jsondata[i].lastseen;
+          var firstSeen = new Date(first);
+          var lastSeen = new Date(last);
+          var stringFirst = firstSeen.toString();
+          var stringLast = lastSeen.toString();
+          if(stringFirst.length > 15) stringFirst = stringFirst.substring(0,15);
+          if(stringLast.length > 15) stringLast = stringLast.substring(0,15);
+// And this is where it ends --> Copy the code in between these comments
           listContainer.push("<tr> <td>" + name + "</td> <td>" + "<a onclick=\"searchIp('" +
           ipAddress + "');\">" + ipAddress + "</a> </td>" + "<td>" +
           "<a onclick=\"searchHardware('" + hardware + "');\">" 
           + hardware + "</a> </td>" +
-          "<td>" + count + "</td>" + "</tr>");
+          "<td>" + count + "</td> <td>" + stringFirst + 
+          "</td> <td>" + stringLast + "</td></tr>");
         }
       }
   listTable = "<table> <tr> <th>Machine Name</th>" +
-  "<th>Ip Address</th> <th>Hardware</th> <th>Count</th>" + 
+  "<th>Ip Address</th> <th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
   "</tr>" + listContainer + "</table>"
   $('#listData').html(listTable);
 
