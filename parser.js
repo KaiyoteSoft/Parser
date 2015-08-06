@@ -53,7 +53,7 @@ function inputName() {
       ipAddress + "');\">" + ipAddress + "</a> </td>" + "<td>" +
       "<a onclick=\"searchHardware('" + hardware + "');\">" 
       + hardware + "</a>" + "</td>" +
-      "<td>" + count + "</td> <td>" + stringFirst + "</td> <td>" + stringLast + "</td> </tr>"); //this has been changed
+      "<td>" + count + "</td> </tr>"); //this has been changed
     }
     
   } 
@@ -64,7 +64,7 @@ function inputName() {
     }
 
   listTable = "<table> <tr> <th>Machine Name</th> <th>Ip Address</th>" + 
-  "<th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
+  "<th>Hardware</th> <th>Count</th>" + 
   "</tr>" + listContainer + "</table>"
 
   $('#listData').html(" ");  
@@ -111,8 +111,7 @@ function inputList() {
         ipAddress + "');\">" + ipAddress + "</a> </td>" + "<td>" +
         "<a onclick=\"searchHardware('" + hardware + "');\">" 
         + hardware + "</a>" + "</td>" +
-        "<td>" + count + "</td> <td>" + stringFirst + "</td>" + 
-        "<td>" + stringLast + "</td></tr>"); 
+        "<td>" + count + "</td> </tr>"); 
         }
       }
     }
@@ -129,8 +128,7 @@ function inputList() {
     } 
 
   listTable = "<table> <tr> <th>Machine Name</th> <th>Ip Address</th>" + 
-  "<th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
-  "</tr>" + listContainer + "</table>"
+  "<th>Hardware</th> <th>Count</th> </tr>" + listContainer + "</table>"
 
   $('#listData').html(" "); 
   $('#listData').html(listTable);
@@ -173,8 +171,7 @@ function inputHardware() {
         listContainer.push("<tr> <td>" + name + "</td> <td>" + hardware + "</td>" + "<td>" +
         "<a onclick=\"searchIp('" + ipAddress + "');\">" 
         + ipAddress + "</a>" + "</td>" +
-        "<td>" + count + "</td> <td>" + stringFirst + "</td>" + 
-        "<td>" + stringLast + "</td> </tr>"); 
+        "<td>" + count + "</td> </tr>"); 
         }
       }
     }
@@ -191,8 +188,7 @@ function inputHardware() {
   }
 
   listTable = "<table> <tr> <th>Machine Name</th> <th>Hardware</th>" + 
-  "<th>Ip Address</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
-  "</tr>" + listContainer + "</table>"
+  "<th>Ip Address</th> <th>Count</th> </tr>" + listContainer + "</table>"
 
   $('#listData').html(" ");
   $('#listData').html(listTable);
@@ -231,14 +227,12 @@ function searchHardware(hw) {
           listContainer.push("<tr> <td>" + name + "</td> <td>" + hardware + "</td>" + "<td>" + 
           "<a onclick=\"searchIp('" + ipAddress + "');\">"
           + ipAddress + "</td>" +
-          "<td>" + count + "</td> <td>" + stringFirst + "</td>" +
-          "<td>" + stringLast + "</td> </tr>"); 
+          "<td>" + count + "</td> <td> </tr>"); 
         }
       }
     }
   listTable = "<table> <tr> <th>Machine Name</th> <th>Hardware</th>" +
-  "<th>Ip Address</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
-  "</tr>" + listContainer + "</table>" 
+  "<th>Ip Address</th> <th>Count</th> </tr>" + listContainer + "</table>" 
   
   $('#listData').html(" "); 
   $('#listData').html(listTable);
@@ -278,13 +272,11 @@ function searchIp(Ip) {
           ipAddress + "');\">" + ipAddress + "</a> </td>" + "<td>" +
           "<a onclick=\"searchHardware('" + hardware + "');\">" 
           + hardware + "</a> </td>" +
-          "<td>" + count + "</td> <td>" + stringFirst + 
-          "</td> <td>" + stringLast + "</td></tr>"); //this is needed
+          "<td>" + count + "</td> <td>" + stringLast + "</td></tr>"); //this is needed
         }
       }
   listTable = "<table> <tr> <th>Machine Name</th>" +
-  "<th>Ip Address</th> <th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
-  "</tr>" + listContainer + "</table>" 
+  "<th>Ip Address</th> <th>Hardware</th> <th>Count</th> </tr>" + listContainer + "</table>" 
   
   $('#listData').html(" "); 
   $('#listData').html(listTable);
