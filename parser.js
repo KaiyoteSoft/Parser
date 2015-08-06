@@ -227,7 +227,7 @@ function searchHardware(hw) {
           listContainer.push("<tr> <td>" + name + "</td> <td>" + hardware + "</td>" + "<td>" + 
           "<a onclick=\"searchIp('" + ipAddress + "');\">"
           + ipAddress + "</td>" +
-          "<td>" + count + "</td> <td> </tr>"); 
+          "<td>" + count + "</td> </tr>"); 
         }
       }
     }
@@ -272,7 +272,7 @@ function searchIp(Ip) {
           ipAddress + "');\">" + ipAddress + "</a> </td>" + "<td>" +
           "<a onclick=\"searchHardware('" + hardware + "');\">" 
           + hardware + "</a> </td>" +
-          "<td>" + count + "</td> <td>" + stringLast + "</td></tr>"); //this is needed
+          "<td>" + count + "</td> </tr>"); //this is needed
         }
       }
   listTable = "<table> <tr> <th>Machine Name</th>" +
