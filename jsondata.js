@@ -9,7 +9,7 @@ var jsondata = [
   },
   {
     "firstseen": "2013-04-10T21:08:50Z",
-    "fqname": "lion-2.stanford.edu",
+    "fqname": "eda-2.stanford.edu",
     "hw": "000f2098a5fd",
     "ipstr": "171.64.101.10",
     "lastseen": "2015-07-11T04:45:07Z",
@@ -25,7 +25,7 @@ var jsondata = [
   },
   {
     "firstseen": "2010-01-18T05:48:14Z",
-    "fqname": "lion-stds.com",
+    "fqname": "eda-stds.com",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.101",
     "lastseen": "2015-07-22T08:43:50Z",
@@ -33,7 +33,7 @@ var jsondata = [
   },
   {
     "firstseen": "2010-01-17T09:47:14Z",
-    "fqname": "lion-stds.net",
+    "fqname": "eda-stds.net",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.101",
     "lastseen": "2014-02-12T21:40:53Z",
@@ -41,7 +41,7 @@ var jsondata = [
   },
   {
     "firstseen": "2010-01-17T05:47:34Z",
-    "fqname": "lion-stds.org",
+    "fqname": "eda-stds.org",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.101",
     "lastseen": "2014-02-12T17:38:02Z",
@@ -49,7 +49,7 @@ var jsondata = [
   },
   {
     "firstseen": "2010-01-17T13:46:25Z",
-    "fqname": "lion.org",
+    "fqname": "eda.org",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.101",
     "lastseen": "2014-02-11T09:40:10Z",
@@ -57,7 +57,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-05-29T05:08:20Z",
-    "fqname": "lion.org",
+    "fqname": "eda.org",
     "hw": "00a0246b4df9",
     "ipstr": "171.64.101.101",
     "lastseen": "2002-07-15T20:52:51Z",
@@ -65,7 +65,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-08-16T01:02:03Z",
-    "fqname": "lion.org",
+    "fqname": "eda.org",
     "hw": "00a0ccd5c26b",
     "ipstr": "171.64.101.101",
     "lastseen": "2004-03-07T21:57:07Z",
@@ -73,7 +73,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-01-03T02:15:18Z",
-    "fqname": "lion.org",
+    "fqname": "eda.org",
     "hw": "0800201f1f6c",
     "ipstr": "171.64.101.101",
     "lastseen": "2002-08-15T21:02:18Z",
@@ -81,7 +81,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "serverlion.org",
+    "fqname": "server.eda.org",
     "hw": "0800201f1f6c",
     "ipstr": "171.64.101.101",
     "lastseen": "2002-01-02T22:15:16Z",
@@ -89,7 +89,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-02-22T22:34:29Z",
-    "fqname": "serverlion.org",
+    "fqname": "server.eda.org",
     "hw": "08002073a5a6",
     "ipstr": "171.64.101.101",
     "lastseen": "2001-03-13T22:42:00Z",
@@ -97,7 +97,7 @@ var jsondata = [
   },
   {
     "firstseen": "2006-06-15T12:28:59Z",
-    "fqname": "lion-stds.com",
+    "fqname": "eda-stds.com",
     "hw": "080020e93c38",
     "ipstr": "171.64.101.101",
     "lastseen": "2010-01-16T21:47:52Z",
@@ -105,7 +105,7 @@ var jsondata = [
   },
   {
     "firstseen": "2006-06-14T12:29:21Z",
-    "fqname": "lion-stds.net",
+    "fqname": "eda-stds.net",
     "hw": "080020e93c38",
     "ipstr": "171.64.101.101",
     "lastseen": "2010-01-16T17:46:17Z",
@@ -113,7 +113,7 @@ var jsondata = [
   },
   {
     "firstseen": "2006-06-13T20:30:24Z",
-    "fqname": "lion-stds.org",
+    "fqname": "eda-stds.org",
     "hw": "080020e93c38",
     "ipstr": "171.64.101.101",
     "lastseen": "2010-01-16T13:46:16Z",
@@ -121,7 +121,7 @@ var jsondata = [
   },
   {
     "firstseen": "2004-03-08T01:58:18Z",
-    "fqname": "lion.org",
+    "fqname": "eda.org",
     "hw": "080020e93c38",
     "ipstr": "171.64.101.101",
     "lastseen": "2010-01-17T01:47:48Z",
@@ -1809,7 +1809,7 @@ var jsondata = [
   },
   {
     "firstseen": "2010-01-18T17:46:28Z",
-    "fqname": "lion.stanford.edu",
+    "fqname": "eda.stanford.edu",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.205",
     "lastseen": "2015-07-22T08:43:50Z",
@@ -1817,7 +1817,7 @@ var jsondata = [
   },
   {
     "firstseen": "2009-09-12T07:46:02Z",
-    "fqname": "sparelion.org",
+    "fqname": "spare.eda.org",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.205",
     "lastseen": "2010-01-18T21:46:20Z",
@@ -1929,7 +1929,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-05-25T01:08:11Z",
-    "fqname": "lion-firewall.stanford.edu",
+    "fqname": "eda-firewall.stanford.edu",
     "hw": "00a0246b4df9",
     "ipstr": "171.64.101.216",
     "lastseen": "2002-07-16T00:52:43Z",
@@ -1937,7 +1937,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-08-14T21:02:26Z",
-    "fqname": "lion-firewall.stanford.edu",
+    "fqname": "eda-firewall.stanford.edu",
     "hw": "00a0ccd5c26b",
     "ipstr": "171.64.101.216",
     "lastseen": "2005-06-30T04:30:00Z",
@@ -3552,4 +3552,3 @@ var jsondata = [
     "refcnt": 3823
   }
 ];
-
