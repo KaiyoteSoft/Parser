@@ -129,7 +129,7 @@ var jsondata = [
   },
   {
     "firstseen": "2010-01-17T05:47:34Z",
-    "fqname": "vhdl.org",
+    "fqname": "rhino.org",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.103",
     "lastseen": "2015-07-22T08:43:50Z",
@@ -137,7 +137,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-05-29T05:08:20Z",
-    "fqname": "vhdl.org",
+    "fqname": "rhino.org",
     "hw": "00a0246b4df9",
     "ipstr": "171.64.101.103",
     "lastseen": "2002-07-15T20:52:51Z",
@@ -145,7 +145,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-08-15T21:02:18Z",
-    "fqname": "vhdl.org",
+    "fqname": "rhino.org",
     "hw": "00a0ccd5c26b",
     "ipstr": "171.64.101.103",
     "lastseen": "2004-03-07T21:57:07Z",
@@ -153,7 +153,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "server.vhdl.org",
+    "fqname": "server.rhino.org",
     "hw": "0800201f1f6c",
     "ipstr": "171.64.101.103",
     "lastseen": "2002-01-01T22:11:57Z",
@@ -161,7 +161,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-01-05T10:12:59Z",
-    "fqname": "vhdl.org",
+    "fqname": "rhino.org",
     "hw": "0800201f1f6c",
     "ipstr": "171.64.101.103",
     "lastseen": "2002-08-15T16:59:42Z",
@@ -169,7 +169,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-02-22T22:34:29Z",
-    "fqname": "server.vhdl.org",
+    "fqname": "server.rhino.org",
     "hw": "08002073a5a6",
     "ipstr": "171.64.101.103",
     "lastseen": "2001-03-13T22:42:00Z",
@@ -177,7 +177,7 @@ var jsondata = [
   },
   {
     "firstseen": "2004-03-08T01:58:18Z",
-    "fqname": "vhdl.org",
+    "fqname": "rhino.org",
     "hw": "080020e93c38",
     "ipstr": "171.64.101.103",
     "lastseen": "2010-01-17T01:47:48Z",
@@ -185,7 +185,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-07-25T00:54:11Z",
-    "fqname": "snf-bellew.stanford.edu",
+    "fqname": "snake-bellew.stanford.edu",
     "hw": "00023f70054e",
     "ipstr": "171.64.101.104",
     "lastseen": "2005-07-01T00:30:01Z",
@@ -193,7 +193,7 @@ var jsondata = [
   },
   {
     "firstseen": "2010-01-17T05:47:34Z",
-    "fqname": "dasc.org",
+    "fqname": "dart.org",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.105",
     "lastseen": "2015-07-22T08:43:50Z",
@@ -201,7 +201,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-05-29T05:08:20Z",
-    "fqname": "dasc.org",
+    "fqname": "dart.org",
     "hw": "00a0246b4df9",
     "ipstr": "171.64.101.105",
     "lastseen": "2002-07-15T20:52:52Z",
@@ -209,7 +209,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-08-16T01:02:03Z",
-    "fqname": "dasc.org",
+    "fqname": "dart.org",
     "hw": "00a0ccd5c26b",
     "ipstr": "171.64.101.105",
     "lastseen": "2004-03-07T21:57:07Z",
@@ -217,7 +217,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-12-12T02:14:20Z",
-    "fqname": "dasc.org",
+    "fqname": "dart.org",
     "hw": "0800201f1f6c",
     "ipstr": "171.64.101.105",
     "lastseen": "2002-08-15T21:02:18Z",
@@ -225,7 +225,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "server.dasc.org",
+    "fqname": "server.dart.org",
     "hw": "0800201f1f6c",
     "ipstr": "171.64.101.105",
     "lastseen": "2001-12-11T22:17:12Z",
@@ -233,7 +233,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-02-22T22:34:29Z",
-    "fqname": "server.dasc.org",
+    "fqname": "server.dart.org",
     "hw": "08002073a5a6",
     "ipstr": "171.64.101.105",
     "lastseen": "2001-03-13T22:42:00Z",
@@ -241,7 +241,7 @@ var jsondata = [
   },
   {
     "firstseen": "2004-03-08T01:58:18Z",
-    "fqname": "dasc.org",
+    "fqname": "dart.org",
     "hw": "080020e93c38",
     "ipstr": "171.64.101.105",
     "lastseen": "2010-01-17T01:47:48Z",
@@ -257,7 +257,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-07-26T01:13:43Z",
-    "fqname": "snf-wang.stanford.edu",
+    "fqname": "snake-wang.stanford.edu",
     "hw": "0800201f1f6c",
     "ipstr": "171.64.101.106",
     "lastseen": "2001-12-08T02:21:18Z",
@@ -377,7 +377,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "snf-mac1.stanford.edu",
+    "fqname": "snake-mac1.stanford.edu",
     "hw": "000502b0770f",
     "ipstr": "171.64.101.112",
     "lastseen": "2001-11-16T06:22:18Z",
@@ -385,7 +385,7 @@ var jsondata = [
   },
   {
     "firstseen": "2005-11-03T17:32:08Z",
-    "fqname": "snf-microscope.stanford.edu",
+    "fqname": "snake-microscope.stanford.edu",
     "hw": "00b0d0069962",
     "ipstr": "171.64.101.112",
     "lastseen": "2015-07-22T08:43:50Z",
@@ -393,7 +393,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-08-29T01:02:03Z",
-    "fqname": "snf-microscope.stanford.edu",
+    "fqname": "snake-microscope.stanford.edu",
     "hw": "00c04f6e2a74",
     "ipstr": "171.64.101.112",
     "lastseen": "2005-11-10T05:33:39Z",
@@ -401,7 +401,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "snf-mac2.stanford.edu",
+    "fqname": "snake-mac2.stanford.edu",
     "hw": "000502b07359",
     "ipstr": "171.64.101.113",
     "lastseen": "2001-11-16T06:22:18Z",
@@ -473,7 +473,7 @@ var jsondata = [
   },
   {
     "firstseen": "2008-11-20T01:46:16Z",
-    "fqname": "snf-dummy.stanford.edu",
+    "fqname": "snake-dummy.stanford.edu",
     "hw": "080020ebc787",
     "ipstr": "171.64.101.118",
     "lastseen": "2010-01-19T09:48:23Z",
@@ -481,7 +481,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-08-06T12:56:15Z",
-    "fqname": "snf-dummy.stanford.edu",
+    "fqname": "snake-dummy.stanford.edu",
     "hw": "080020ebc7ea",
     "ipstr": "171.64.101.118",
     "lastseen": "2005-08-16T16:30:23Z",
@@ -489,7 +489,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-03-22T18:05:44Z",
-    "fqname": "snf-dummy.stanford.edu",
+    "fqname": "snake-dummy.stanford.edu",
     "hw": "080020ebc7eb",
     "ipstr": "171.64.101.118",
     "lastseen": "2008-11-19T21:55:55Z",
@@ -553,7 +553,7 @@ var jsondata = [
   },
   {
     "firstseen": "2008-11-20T01:46:16Z",
-    "fqname": "snf-test0.stanford.edu",
+    "fqname": "snake-test0.stanford.edu",
     "hw": "080020ebc786",
     "ipstr": "171.64.101.126",
     "lastseen": "2010-01-19T09:48:23Z",
@@ -561,7 +561,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-03-19T02:13:27Z",
-    "fqname": "snf-test0.stanford.edu",
+    "fqname": "snake-test0.stanford.edu",
     "hw": "080020ebc7ea",
     "ipstr": "171.64.101.126",
     "lastseen": "2008-11-19T21:55:55Z",
@@ -569,7 +569,7 @@ var jsondata = [
   },
   {
     "firstseen": "2009-07-29T16:45:06Z",
-    "fqname": "snf2.stanford.edu",
+    "fqname": "snake2.stanford.edu",
     "hw": "000874b251b2",
     "ipstr": "171.64.101.127",
     "lastseen": "2010-07-29T04:53:19Z",
@@ -625,7 +625,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-01-10T06:06:07Z",
-    "fqname": "snfweb.stanford.edu",
+    "fqname": "snakeweb.stanford.edu",
     "hw": "00c095f8f929",
     "ipstr": "171.64.101.131",
     "lastseen": "2002-03-13T18:12:44Z",
@@ -633,7 +633,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "www-snf.stanford.edu",
+    "fqname": "www-snake.stanford.edu",
     "hw": "00c095f8f929",
     "ipstr": "171.64.101.131",
     "lastseen": "2001-02-05T22:41:23Z",
@@ -777,7 +777,7 @@ var jsondata = [
   },
   {
     "firstseen": "2008-11-20T01:46:16Z",
-    "fqname": "snf-test1.stanford.edu",
+    "fqname": "snake-test1.stanford.edu",
     "hw": "080020ebc787",
     "ipstr": "171.64.101.138",
     "lastseen": "2010-01-19T09:48:23Z",
@@ -785,7 +785,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-04-12T21:10:44Z",
-    "fqname": "snf-test1.stanford.edu",
+    "fqname": "snake-test1.stanford.edu",
     "hw": "080020ebc7eb",
     "ipstr": "171.64.101.138",
     "lastseen": "2008-11-19T21:55:55Z",
@@ -793,7 +793,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-03-21T22:08:39Z",
-    "fqname": "snf-faulkner.stanford.edu",
+    "fqname": "snake-faulkner.stanford.edu",
     "hw": "00045a07f35f",
     "ipstr": "171.64.101.139",
     "lastseen": "2003-04-07T01:01:21Z",
@@ -857,7 +857,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-04-12T01:12:38Z",
-    "fqname": "snf-054-pc.stanford.edu",
+    "fqname": "snake-054-pc.stanford.edu",
     "hw": "000347cf49fa",
     "ipstr": "171.64.101.142",
     "lastseen": "2011-03-10T05:44:38Z",
@@ -865,7 +865,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "snf-054-pc.stanford.edu",
+    "fqname": "snake-054-pc.stanford.edu",
     "hw": "00c0f04687f8",
     "ipstr": "171.64.101.142",
     "lastseen": "2002-04-11T21:13:35Z",
@@ -873,7 +873,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "snf-055-pc.stanford.edu",
+    "fqname": "snake-055-pc.stanford.edu",
     "hw": "00c0f047f62a",
     "ipstr": "171.64.101.143",
     "lastseen": "2001-05-04T05:29:21Z",
@@ -913,7 +913,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "snf-050-pclaptop.stanford.edu",
+    "fqname": "snake-050-pclaptop.stanford.edu",
     "hw": "00d0b701831a",
     "ipstr": "171.64.101.147",
     "lastseen": "2002-12-14T02:05:05Z",
@@ -937,7 +937,7 @@ var jsondata = [
   },
   {
     "firstseen": "2003-01-16T21:56:17Z",
-    "fqname": "snf-t-ram.stanford.edu",
+    "fqname": "snake-t-ram.stanford.edu",
     "hw": "00095b0ca26b",
     "ipstr": "171.64.101.148",
     "lastseen": "2003-09-09T09:03:24Z",
@@ -1137,7 +1137,7 @@ var jsondata = [
   },
   {
     "firstseen": "2008-09-03T16:41:22Z",
-    "fqname": "snf-jimh.stanford.edu",
+    "fqname": "snake-jimh.stanford.edu",
     "hw": "00219b3f7100",
     "ipstr": "171.64.101.168",
     "lastseen": "2014-04-04T16:37:16Z",
@@ -1585,7 +1585,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-08-14T05:15:59Z",
-    "fqname": "snf-process1.stanford.edu",
+    "fqname": "snake-process1.stanford.edu",
     "hw": "00065b170dc2",
     "ipstr": "171.64.101.184",
     "lastseen": "2004-04-30T00:59:50Z",
@@ -1833,7 +1833,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-10-24T21:33:55Z",
-    "fqname": "snf-maint2.stanford.edu",
+    "fqname": "snake-maint2.stanford.edu",
     "hw": "00065b2d0148",
     "ipstr": "171.64.101.206",
     "lastseen": "2005-11-02T13:31:00Z",
@@ -1841,7 +1841,7 @@ var jsondata = [
   },
   {
     "firstseen": "2005-11-02T17:33:24Z",
-    "fqname": "snf-maint2.stanford.edu",
+    "fqname": "snake-maint2.stanford.edu",
     "hw": "00065b90f920",
     "ipstr": "171.64.101.206",
     "lastseen": "2010-04-30T20:55:37Z",
@@ -1849,7 +1849,7 @@ var jsondata = [
   },
   {
     "firstseen": "2009-07-15T00:45:15Z",
-    "fqname": "snf-maint3.stanford.edu",
+    "fqname": "snake-maint3.stanford.edu",
     "hw": "000874a60eeb",
     "ipstr": "171.64.101.207",
     "lastseen": "2012-04-13T16:47:51Z",
@@ -1857,7 +1857,7 @@ var jsondata = [
   },
   {
     "firstseen": "2003-01-24T17:56:06Z",
-    "fqname": "snf-maint3.stanford.edu",
+    "fqname": "snake-maint3.stanford.edu",
     "hw": "00a0c9b664bb",
     "ipstr": "171.64.101.207",
     "lastseen": "2005-03-25T17:53:37Z",
@@ -1865,7 +1865,7 @@ var jsondata = [
   },
   {
     "firstseen": "2005-03-28T17:54:45Z",
-    "fqname": "snf-maint3.stanford.edu",
+    "fqname": "snake-maint3.stanford.edu",
     "hw": "00b0d062a8c5",
     "ipstr": "171.64.101.207",
     "lastseen": "2009-03-04T17:46:00Z",
@@ -2041,7 +2041,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-10-02T05:02:09Z",
-    "fqname": "snf-schaevitz.stanford.edu",
+    "fqname": "snake-schaevitz.stanford.edu",
     "hw": "0005024e086b",
     "ipstr": "171.64.101.222",
     "lastseen": "2004-02-10T17:58:48Z",
@@ -2129,7 +2129,7 @@ var jsondata = [
   },
   {
     "firstseen": "2009-11-05T21:49:57Z",
-    "fqname": "snfcam3.stanford.edu",
+    "fqname": "snakecam3.stanford.edu",
     "hw": "0014d1f0d749",
     "ipstr": "171.64.101.226",
     "lastseen": "2015-05-14T16:45:39Z",
@@ -2265,7 +2265,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-07-03T17:15:22Z",
-    "fqname": "snf-maint1.stanford.edu",
+    "fqname": "snake-maint1.stanford.edu",
     "hw": "00a0c9b664bb",
     "ipstr": "171.64.101.239",
     "lastseen": "2001-09-17T21:24:58Z",
@@ -2273,7 +2273,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-06-14T21:02:07Z",
-    "fqname": "snf-maint1.stanford.edu",
+    "fqname": "snake-maint1.stanford.edu",
     "hw": "00c04f6e2d88",
     "ipstr": "171.64.101.239",
     "lastseen": "2003-08-02T01:04:25Z",
@@ -2321,7 +2321,7 @@ var jsondata = [
   },
   {
     "firstseen": "2009-09-14T16:45:45Z",
-    "fqname": "snfcam1.stanford.edu",
+    "fqname": "snakecam1.stanford.edu",
     "hw": "0014d1f08f06",
     "ipstr": "171.64.101.241",
     "lastseen": "2015-03-23T00:39:28Z",
@@ -2945,7 +2945,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-06-26T01:00:30Z",
-    "fqname": "snf-yao.stanford.edu",
+    "fqname": "snake-yao.stanford.edu",
     "hw": "00d009ce80bd",
     "ipstr": "171.64.101.48",
     "lastseen": "2004-07-12T04:57:11Z",
@@ -2993,7 +2993,7 @@ var jsondata = [
   },
   {
     "firstseen": "2007-11-08T17:36:23Z",
-    "fqname": "snf-baxter.stanford.edu",
+    "fqname": "snake-baxter.stanford.edu",
     "hw": "001320d9707e",
     "ipstr": "171.64.101.51",
     "lastseen": "2012-10-04T12:50:45Z",
@@ -3001,7 +3001,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-07-22T20:53:16Z",
-    "fqname": "snf-freeman.stanford.edu",
+    "fqname": "snake-freeman.stanford.edu",
     "hw": "00e04c000fc4",
     "ipstr": "171.64.101.53",
     "lastseen": "2004-06-08T05:02:03Z",
@@ -3033,7 +3033,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-09-01T01:19:29Z",
-    "fqname": "snf-probe-pc.stanford.edu",
+    "fqname": "snake-probe-pc.stanford.edu",
     "hw": "00a0c90fd60d",
     "ipstr": "171.64.101.56",
     "lastseen": "2001-11-05T18:31:40Z",
@@ -3081,7 +3081,7 @@ var jsondata = [
   },
   {
     "firstseen": "2007-01-23T21:28:07Z",
-    "fqname": "snf-goel.stanford.edu",
+    "fqname": "snake-goel.stanford.edu",
     "hw": "001125ce3eb4",
     "ipstr": "171.64.101.60",
     "lastseen": "2007-07-31T00:32:35Z",
@@ -3145,7 +3145,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-02-06T02:10:29Z",
-    "fqname": "snf-fab-pc1.stanford.edu",
+    "fqname": "snake-fab-pc1.stanford.edu",
     "hw": "00104b2d0f21",
     "ipstr": "171.64.101.66",
     "lastseen": "2004-08-13T20:56:28Z",
@@ -3153,7 +3153,7 @@ var jsondata = [
   },
   {
     "firstseen": "2009-09-19T00:48:07Z",
-    "fqname": "snfcam2.stanford.edu",
+    "fqname": "snakecam2.stanford.edu",
     "hw": "0014d1f07d11",
     "ipstr": "171.64.101.67",
     "lastseen": "2013-03-08T17:51:16Z",
@@ -3505,7 +3505,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-03-06T22:16:37Z",
-    "fqname": "snf-gupta.stanford.edu",
+    "fqname": "snake-gupta.stanford.edu",
     "hw": "0800460dc4dc",
     "ipstr": "171.64.101.95",
     "lastseen": "2003-05-10T01:01:33Z",
