@@ -49,7 +49,7 @@ var jsondata = [
   },
   {
     "firstseen": "2010-01-17T13:46:25Z",
-    "fqname": "lion".org",
+    "fqname": "lion.org",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.101",
     "lastseen": "2014-02-11T09:40:10Z",
@@ -57,7 +57,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-05-29T05:08:20Z",
-    "fqname": "lion".org",
+    "fqname": "lion.org",
     "hw": "00a0246b4df9",
     "ipstr": "171.64.101.101",
     "lastseen": "2002-07-15T20:52:51Z",
@@ -65,7 +65,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-08-16T01:02:03Z",
-    "fqname": "lion".org",
+    "fqname": "lion.org",
     "hw": "00a0ccd5c26b",
     "ipstr": "171.64.101.101",
     "lastseen": "2004-03-07T21:57:07Z",
@@ -73,7 +73,7 @@ var jsondata = [
   },
   {
     "firstseen": "2002-01-03T02:15:18Z",
-    "fqname": "lion".org",
+    "fqname": "lion.org",
     "hw": "0800201f1f6c",
     "ipstr": "171.64.101.101",
     "lastseen": "2002-08-15T21:02:18Z",
@@ -81,7 +81,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-01-24T02:49:16Z",
-    "fqname": "server"lion.org",
+    "fqname": "serverlion.org",
     "hw": "0800201f1f6c",
     "ipstr": "171.64.101.101",
     "lastseen": "2002-01-02T22:15:16Z",
@@ -89,7 +89,7 @@ var jsondata = [
   },
   {
     "firstseen": "2001-02-22T22:34:29Z",
-    "fqname": "server"lion.org",
+    "fqname": "serverlion.org",
     "hw": "08002073a5a6",
     "ipstr": "171.64.101.101",
     "lastseen": "2001-03-13T22:42:00Z",
@@ -121,7 +121,7 @@ var jsondata = [
   },
   {
     "firstseen": "2004-03-08T01:58:18Z",
-    "fqname": "lion".org",
+    "fqname": "lion.org",
     "hw": "080020e93c38",
     "ipstr": "171.64.101.101",
     "lastseen": "2010-01-17T01:47:48Z",
@@ -1809,7 +1809,7 @@ var jsondata = [
   },
   {
     "firstseen": "2010-01-18T17:46:28Z",
-    "fqname": "lion".stanford.edu",
+    "fqname": "lion.stanford.edu",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.205",
     "lastseen": "2015-07-22T08:43:50Z",
@@ -1817,7 +1817,7 @@ var jsondata = [
   },
   {
     "firstseen": "2009-09-12T07:46:02Z",
-    "fqname": "spare"lion.org",
+    "fqname": "sparelion.org",
     "hw": "000f2098a403",
     "ipstr": "171.64.101.205",
     "lastseen": "2010-01-18T21:46:20Z",
