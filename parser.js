@@ -12,12 +12,12 @@ function errorMessage(error) {
   if (error=="error") {
     alert("What you have searched for is not available in our database");
   }
-  if (error=="octetError") {
-    alert("You need at least 3 octets for a valid search");
-  }
-  if (error=="hardwareError") {
-    alert("You need at least 12 characters for a valid search");
-  }
+  // if (error=="octetError") {
+  //   alert("You need at least 3 octets for a valid search");
+  // }
+  // if (error=="hardwareError") {
+  //   alert("You need at least 12 characters for a valid search");
+  // }
 }
 
 // Takes the name inputed from the from and searches the json data
@@ -265,7 +265,7 @@ function searchIp(Ip) {
           var name = jsondata[i].fqname;
           var count = jsondata[i].refcnt;
 // This part of the code translates and edits the times seen
-        var first = jsondata[i].firstseen;
+        var first = jsondata[i].firstsejm,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,en;
         var last = jsondata[i].lastseen;
           var firstSeen = new Date(first);
           var lastSeen = new Date(last);
