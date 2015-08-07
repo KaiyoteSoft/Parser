@@ -8,17 +8,17 @@ $(document).ready(function() {
 });
 
 
-function errorMessage(error) {
-  if (error=="error") {
-    alert("What you have searched for is not available in our database");
-  }
+// function errorMessage(error) {
+//   if (error=="error") {
+//     alert("What you have searched for is not available in our database");
+//   }
   // if (error=="octetError") {
   //   alert("You need at least 3 octets for a valid search");
   // }
   // if (error=="hardwareError") {
   //   alert("You need at least 12 characters for a valid search");
   // }
-}
+// }
 
 // Takes the name inputed from the from and searches the json data
 function inputName() {
@@ -60,7 +60,7 @@ function inputName() {
     if (count < 1) {
       listContainer.push("<tr> <td colspan='6'>What you have searched for is" + 
         " not available in our database </td> </tr>");
-      errorMessage("error");
+      // errorMessage("error");
     }
 
   listTable = "<table> <tr> <th>Machine Name</th> <th>Ip Address</th>" + 
@@ -185,10 +185,10 @@ function inputHardware() {
       // errorMessage("error");
     }
     
-    if (hwAddress.length <= requiredlengthHw) {
-      listContainer.push("<tr> <td colspan='6'>System needs at least 12 characters for a valid search</td> </tr>");
-      errorMessage("hardwareError");
-  }
+  //   if (hwAddress.length <= requiredlengthHw) {
+  //     listContainer.push("<tr> <td colspan='6'>System needs at least 12 characters for a valid search</td> </tr>");
+  //     errorMessage("hardwareError");
+  // }
 
   listTable = "<table> <tr> <th>Machine Name</th> <th>Hardware</th>" + 
   "<th>Ip Address</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
@@ -265,8 +265,8 @@ function searchIp(Ip) {
           var name = jsondata[i].fqname;
           var count = jsondata[i].refcnt;
 // This part of the code translates and edits the times seen
-        var first = jsondata[i].firstsejm,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,en;
-        var last = jsondata[i].lastseen;
+          var first = jsondata[i].firstseen;
+          var last = jsondata[i].lastseen;
           var firstSeen = new Date(first);
           var lastSeen = new Date(last);
           var stringFirst = firstSeen.toString();
