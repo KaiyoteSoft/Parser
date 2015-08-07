@@ -85,12 +85,12 @@ function inputList() {
   var i = 0;
   var count = 0;
 // Creating the octet and preparing to check correct length
-  var ipOctet = listAddress.split('.');
-  var minOctetLength = 3
+  // var ipOctet = listAddress.split('.');
+  // var minOctetLength = 3
   
   for (i; i < jsondata.length; i++) {
     var jsonData = jsondata[i].ipstr
-    if (ipOctet.length >= minOctetLength) {
+    // if (ipOctet.length >= minOctetLength) {
       if (jsonData.startsWith(listAddress)) {
         var ipAddress = jsondata[i].ipstr;
         var count = jsondata[i].refcnt;
@@ -105,7 +105,7 @@ function inputList() {
           var stringLast = lastSeen.toString();
           if(stringFirst.length > 15) stringFirst = stringFirst.substring(0,15);
           if(stringLast.length > 15) stringLast = stringLast.substring(0,15);
-// And this is where it ends --> Copy the code in between these comments
+// And this is where it ends 
         count = count + 1;
         listContainer.push("<tr> <td>" + name + "</td> <td>" + "<a onclick=\"searchIp('" +
         ipAddress + "');\">" + ipAddress + "</a> </td>" + "<td>" +
@@ -114,19 +114,19 @@ function inputList() {
         "<td>" + count + "</td> <td>" + stringFirst + "</td>" + 
         "<td>" + stringLast + "</td></tr>"); 
         }
-      }
+      // }
     }
     
     if (count < 1) {
       listContainer.push("<tr> <td colspan='6'>What you have searched for is" + 
         " not available in our database </td> </tr>");
-      errorMessage("error");
+      // errorMessage("error");
     }
 
-    if (ipOctet.length <= minOctetLength) {
-      listContainer.push("<tr> <td colspan='6'>Needs at least 3 octets for a valid search</td> </tr>");
-      errorMessage("octetError");
-    } 
+    // if (ipOctet.length <= minOctetLength) {
+    //   listContainer.push("<tr> <td colspan='6'>Needs at least 3 octets for a valid search</td> </tr>");
+    //   errorMessage("octetError");
+    // } 
 
   listTable = "<table> <tr> <th>Machine Name</th> <th>Ip Address</th>" + 
   "<th>Hardware</th> <th>Count</th> <th>First Seen</th> <th>Last Seen</th>" + 
@@ -159,7 +159,7 @@ function inputHardware() {
         var count = jsondata[i].refcnt;
         var hardware = jsondata[i].hw;
         var name = jsondata[i].fqname;
-// This part of the code translates and edits the times seen
+  // This part of the code translates and edits the times seen
         var first = jsondata[i].firstseen;
         var last = jsondata[i].lastseen;
           var firstSeen = new Date(first);
@@ -168,13 +168,13 @@ function inputHardware() {
           var stringLast = lastSeen.toString();
           if(stringFirst.length > 15) stringFirst = stringFirst.substring(0,15);
           if(stringLast.length > 15) stringLast = stringLast.substring(0,15);
-// And this is where it ends --> Copy the code in between these comments
-        count = count + 1;
-        listContainer.push("<tr> <td>" + name + "</td> <td>" + hardware + "</td>" + "<td>" +
-        "<a onclick=\"searchIp('" + ipAddress + "');\">" 
-        + ipAddress + "</a>" + "</td>" +
-        "<td>" + count + "</td> <td>" + stringFirst + "</td>" + 
-        "<td>" + stringLast + "</td> </tr>"); 
+  // And this is where it ends 
+          count = count + 1;
+          listContainer.push("<tr> <td>" + name + "</td> <td>" + hardware + "</td>" + "<td>" +
+          "<a onclick=\"searchIp('" + ipAddress + "');\">" 
+          + ipAddress + "</a>" + "</td>" +
+          "<td>" + count + "</td> <td>" + stringFirst + "</td>" + 
+          "<td>" + stringLast + "</td> </tr>"); 
         }
       }
     }
@@ -182,7 +182,7 @@ function inputHardware() {
     if (count < 1) {
       listContainer.push("<tr> <td colspan='6'>What you have searched for is" + 
         " not available in our database </td> </tr>");
-      errorMessage("error");
+      // errorMessage("error");
     }
     
     if (hwAddress.length <= requiredlengthHw) {
